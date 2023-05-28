@@ -1,0 +1,145 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2em;
+  color: rgb(56, 56, 163);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add_todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80vw;
+}
+
+.add_todo_label {
+  margin-top: 1em;
+  color: rgb(225, 132, 73);
+  font-weight: bold;
+  text-align: center;
+}
+
+.add_todo_input {
+  margin: 0 auto;
+  width: 80%;
+  height: 25px;
+  border-radius: 10px;
+  border: 2px solid rgb(225, 132, 73);
+}
+
+.add_todo_button {
+  margin: 1.5em 1em;
+  padding: 0.25em 0.75em;
+  font-size: medium;
+  color: rgb(56, 56, 163);
+  border-radius: 20px;
+  border: 2px solid rgb(56, 56, 163);
+  background-color: rgb(227, 155, 110);
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.add_todo_button:hover {
+  transform: scale(1.2);
+}
+
+.todo_list {
+  width: 85%;
+  margin: 1em auto;
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.todo_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons_container {
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.icon {
+  cursor: pointer;
+  color: rgb(56, 56, 163);
+  transition: ease-in-out 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: rgb(227, 155, 110);
+}
+
+@media (min-width: 720px) {
+  form {
+    flex-direction: row;
+    align-items: flex-end;
+    width: 60vw;
+    margin: 0 auto;
+  }
+
+  .add_todo {
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0 0;
+    width: 40%;
+  }
+
+  .add_todo_label {
+    margin-top: 0;
+    padding-left: 0.5em;
+  }
+
+  .add_todo_input {
+    margin: 0 0;
+  }
+
+  .add_todo_button {
+    margin: 0;
+    border-radius: 10px;
+  }
+
+  .todo_list {
+    width: 40%;
+    margin: 3em auto;
+    border: 1px solid rgb(56, 56, 163);
+    box-shadow: 5px 5px 13px -6px rgba(0, 0, 0, 0.65);
+    border-radius: 20px;
+    padding: 1em 1em;
+  }
+
+  .todo_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .icons_container {
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .icon {
+    cursor: pointer;
+    color: rgb(56, 56, 163);
+    transition: ease-in-out 0.3s;
+  }
+
+  .icon:hover {
+    transform: scale(1.2);
+    color: rgb(227, 155, 110);
+  }
+}
